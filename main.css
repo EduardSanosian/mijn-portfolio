@@ -1,0 +1,182 @@
+
+.dark-mode {
+    background-image: linear-gradient(black,white);
+    color:whitesmoke;
+  }
+.card {
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    align-items: center;    
+     
+}
+.cardDark {
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 90vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(blue,red);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+  min-height: 721px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: right;
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align:left;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 23px;
+  color: white;
+  position: relative;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:black;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+ 
+  table
+   {
+       border: 1px solid white;
+       position: absolute;
+       left: 600px;
+       top:200px;
+       background-color: inherit;
+       color:inherit ;
+   }
+   td
+   {
+      border: 1px solid white;
+      font-size: 48px;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+
+    
+   }
+#speler {
+  position: absolute;
+  left: 650px;
+  top: 560px;
+}
+
+.over-mij {
+  position: absolute;
+  left: 20px;
+}
+
+.selfie {
+  position: absolute;
+  left: 20px;
+  top: 190px;
+}
